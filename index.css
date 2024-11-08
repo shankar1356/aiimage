@@ -1,0 +1,191 @@
+body{
+    background-color: #F7F8F9;
+}
+
+.whitebg{
+    background-color: white;
+}
+
+.idea {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.idea label{
+    margin-left: 1.5rem;
+}
+
+.input-group {
+    position: relative;
+    width: 95%;
+    margin: 0rem 1rem;
+}
+
+.idea input {
+    width: 100%;
+    padding: 5px;
+   
+    height: 50px;
+    border-color: orangered;
+    border-radius: 16px;
+}
+
+.input-icon {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    height: 20px; 
+    width: 20px;
+    pointer-events: none; 
+}
+
+.dropdown-list{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:1rem ;
+}
+
+
+
+
+button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;       
+    align-items: center; 
+    gap: 8px;           
+}
+
+button img {
+    width: 16px;         
+    height: 16px;
+}
+
+
+
+.imgs img{
+
+    width: 300px;
+    height: 300px;
+
+}
+
+.container {
+    width: 600px;
+   
+    font-family: Arial, sans-serif;
+}
+
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+    text-align: left;
+}
+
+.custom-dropdown .dropdown-text {
+    display: flex;
+    align-items: center;
+}
+
+.custom-dropdown img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.slider-dropdown {
+    background-color: #F7F8F9;
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 400px; 
+    overflow-y: auto; 
+}
+
+
+.category {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.category h4 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.figure {
+    text-align: center;
+    width: 80px;
+}
+
+
+.figure img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+.figure figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+.figure img:hover {
+    transform: scale(1.05);
+}
+
+
+.custom-options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 10;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.custom-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.custom-option:hover {
+    background-color: #f0f0f0;
+}
+
+
+#orientation{
+    width: 600px;
+}

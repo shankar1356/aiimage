@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./demo.css">
+    <title>Ai Image</title>
+</head>
+<body>
+    <h1>Ai Image</h1>
+    <p>Effortless Image Creation for Any Need</p>
+    
+
+    <div class="whitebg">
+
+        <div class="idea">
+            <label>Image Idea <span><img src="./assets/helpicon.svg" alt=""></span></label>
+            <div class="input-group">
+                <input type="text" placeholder="oranges in between a bunch of mangoes">
+                <img src="./assets/bulb.svg" alt="bulb icon" class="input-icon">
+            </div>
+        </div>
+        
+    
+        <div class="dropdown-list">
+            <div class="container">
+      
+                <div class="dropdown">
+                    <label for="category-select">Image Style <span><img src="./assets/helpicon.svg" alt=""></span></label>
+                    <div class="custom-dropdown" onclick="toggleCustomOptions()">
+                        <div class="dropdown-text">
+                           
+                            <span id="selected-option">Select</span>
+                        </div>
+                        <div class="custom-options" id="custom-options">
+                            <div class="custom-option" onclick="selectCustomOption('Photography')">
+                                <img src="./assets/file.svg" alt="">
+                                <span>Photography</span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div id="slider-dropdown" class="slider-dropdown">
+                    <div class="category">
+                        <h4>Realistic <span><img src="./assets/helpicon.svg" alt=""></span></h4>
+                        <div class="image-container">
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Photography</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/astro.svg" alt="Nature 2">
+                                <figcaption>Analog Film</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+        
+                    <div class="category">
+                        <h4>Artistic  <span><img src="./assets/helpicon.svg" alt=""></span></h4>
+                        <div class="image-container">
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Anime</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/astro.svg" alt="Nature 2">
+                                <figcaption>Digital Art</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Fantasy Art</figcaption>
+                            </figure>
+                           
+                            <figure class="figure">
+                                <img src="./assets/astro.svg" alt="Nature 2">
+                                <figcaption>Vaporware</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Isometric</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/astro.svg" alt="Nature 2">
+                                <figcaption>Low Poly</figcaption>
+                            </figure>
+        
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Calymation</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/astro.svg" alt="Nature 2">
+                                <figcaption>Origami</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Line Art</figcaption>
+                            </figure>
+                           
+                            <figure class="figure">
+                                <img src="./assets/astro.svg" alt="Nature 2">
+                                <figcaption>Pixel</figcaption>
+                            </figure>
+                            <figure class="figure">
+                                <img src="./assets/atsroicon.png" alt="Nature 1">
+                                <figcaption>Texture</figcaption>
+                            </figure>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+            <div class="dropdown">
+                <label for="image-select">Image orientation <span><img src="./assets/helpicon.svg" alt=""></span></label>
+                <div class="custom-dropdown" id="orientation" onclick="toggleImageOptions()">
+                    <div class="dropdown-text">
+                        <img src="./assets/landscape.svg" alt="">
+                        <span id="selected-image-type">Landscape</span>
+                    </div>
+                    <div class="custom-options" id="image-options">
+                        <div class="custom-option" onclick="selectImageType('Landscape', './assets/mobile.svg')">
+                            <img src="./assets/landscape.svg" alt="">
+                            <span>Landscape</span>
+                        </div>
+                        <div class="custom-option" onclick="selectImageType('Square', './assets/square.svg')">
+                            <img src="./assets/portrait.svg" alt="">
+                            <span>Square</span>
+                        </div>
+                        <div class="custom-option" onclick="selectImageType('Portrait', './assets/desktop.svg')">
+                            <img src="./assets/square.svg" alt="">
+                            <span>Portrait</span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+    
+                      
+        </div>
+
+    
+        <div style="margin: 1rem;">
+            <img width="400" height="400" src="./assets/ai.jpeg" alt="img">
+        </div>
+    
+        
+        <button>
+            <span><img src="./assets/star.svg" alt="" /></span>
+            Generate Image
+        </button>
+        
+
+
+    
+        <div>
+            <p>Your image generation</p>
+            <p>10-11-2024</p>
+    
+            <div class="imgs">
+                <img src="./assets/ai.jpeg" alt="">
+                <img src="./assets/ai.jpeg" alt="">
+                <img src="./assets/ai.jpeg" alt="">
+            </div>
+    
+            <div class="imgs">
+                <img src="./assets/ai.jpeg" alt="">
+                <img src="./assets/ai.jpeg" alt="">
+                <img src="./assets/ai.jpeg" alt="">
+            </div>
+    
+            <div class="imgs">
+                <img src="./assets/ai.jpeg" alt="">
+                <img src="./assets/ai.jpeg" alt="">
+                <img src="./assets/ai.jpeg" alt="">
+            </div>
+    
+    
+        </div>
+
+    </div>
+
+    <script>
+        function toggleCustomOptions() {
+            const customOptions = document.getElementById("custom-options");
+            customOptions.style.display = customOptions.style.display === "block" ? "none" : "block";
+        }
+
+        function selectCustomOption(value) {
+            const selectedOption = document.getElementById("selected-option");
+            selectedOption.textContent = value;
+            document.getElementById("slider-dropdown").style.display = value === "Photography" ? "block" : "none";
+            toggleCustomOptions(); 
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('.custom-dropdown')) {
+                document.getElementById("custom-options").style.display = "none";
+            }
+        };
+
+
+
+        function toggleImageOptions() {
+            const imageOptions = document.getElementById("image-options");
+            imageOptions.style.display = imageOptions.style.display === "block" ? "none" : "block";
+        }
+
+        function selectImageType(value, imageSrc) {
+            const selectedImageType = document.getElementById("selected-image-type");
+            const imageElement = document.querySelector(".custom-dropdown img");
+            selectedImageType.textContent = value;
+            imageElement.src = imageSrc;
+            toggleImageOptions(); 
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('.custom-dropdown')) {
+                document.getElementById("custom-options").style.display = "none";
+                document.getElementById("image-options").style.display = "none";
+            }
+        };
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
